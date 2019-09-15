@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+    <link rel="stylesheet" href="normalize.html">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            
+        }
+       .main {
+           display:grid;
+           min-height: 80vh;
+          /* grid-template-columns: 100px 100px 1fr;
+           grid-template-rows: 100px 300px;*/
+           grid-template: repeat(5,1fr)/repeat(5,1fr);
+           background: blue;
+           grid-gap: 0;
+        }
+        .grid-element{
+        
+           
+        }
+        .grid-element--1{
+           
+            background: green;
+            grid-area: 1/1/2/4;
+        }
+        .grid-element--2{
+            
+            background: red;
+            grid-area: 1/4/2/6;
+        }
+        .grid-element--3{
+            background: purple;
+            grid-area: 2/1/3/6;
+            
+        }
+        .grid-element--4{
+            background: rgb(80, 135, 187);
+            grid-area: 3/1/5/3;
+        }
+        .grid-element--5{
+            background: rgb(233, 174, 14);
+            grid-area: 3/3/5/6;
+        }
+        .grid-element--6{
+            background: rgb(24, 6, 2);
+            grid-area: 5/1/6/6;
+        }
+        .grid-area{
+            display: grid;
+            grid-template-areas: "header header header"
+            "content . menu"
+            "footer footer footer";
+            grid-template-columns: 1fr 10px 100px;
+
+        }
+        .header{
+            grid-area: header;
+            text-align: center;
+        }
+        .content{
+            grid-area: content;
+        }
+        .nav{
+            grid-area: menu;
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+        <ul class="navigation__list navigation__list--js">
+                <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
+                <li class="navigation__list--element"><a class="link" href="magazyn/grid.pdf">grid--pdf</a></li>
+        </ul>
+        <main class="main">
+            <div class="grid-element grid-element--1">1</div>
+            <div class="grid-element grid-element--2">2</div>
+            <div class="grid-element grid-element--3">3</div>
+            <div class="grid-element grid-element--4">4</div>
+            <div class="grid-element grid-element--5">5</div>
+            <div class="grid-element grid-element--6">6</div>
+           
+        </main>
+        <div class="grid-area">
+            <header class="header">nagłowek</header>
+            <article class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, laborum. Eveniet, itaque? Consectetur ipsum consequatur suscipit quidem voluptates amet, ex obcaecati voluptatibus qui molestiae asperiores autem molestias distinctio, mollitia odit.</p></article>
+            <nav class="nav">
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </nav>
+            <footer class="footer">koniec strony</footer>
+
+        </div>
+
+</body>
+</html>
