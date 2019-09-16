@@ -1,4 +1,8 @@
-# wtf-gulp-starter
+![obrazek](github/strona.png)
+
+# zapraszam na moją stronę [moja strona]
+
+## jak uruchomić stronę lokalnie, wykonaj powyższe polecenia:
 
 `npm install -g gulp-cli`
 
