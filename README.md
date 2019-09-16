@@ -1,6 +1,6 @@
 ![obrazek](github/strona.png)
 
-# zapraszam na moją stronę [moja strona]
+## zapraszam: [moja_strona](https://doneilprakapawecz.github.io/homepage-gulp/)
 
 ## jak uruchomić stronę lokalnie, wykonaj powyższe polecenia:
 
