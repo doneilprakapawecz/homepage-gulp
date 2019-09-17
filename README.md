@@ -1,4 +1,4 @@
-![obrazek](github/strona.png)
+![obrazek](gt/strona.png)
 
 
 
