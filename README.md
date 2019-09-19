@@ -2,4 +2,4 @@
 
 []()
 
-![Logo wtf](https://cotenfrontend.pl/img/wtf-mini.svg)
+![Logo wtf](gt/strona.png)
