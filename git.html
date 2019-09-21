@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <title>git</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+                .paragrath {
+                        font-family: lato;
+                }
+
+                .main {
+                        grid-template-columns: 1fr 1fr;
+                }
+        </style>
+        <title>git</title>
 </head>
+
 <body>
         <ul class="navigation__list navigation__list--js">
                 <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
-                <li class="navigation__list--element"><a class="link" href="assets/magazyn/git.pdf"target="_blank">git--pdf</a></li>
-                <li class="navigation__list--element"><a class="link" href="assets/magazyn/git-branche.pdf"target="_blank">git_branche--pdf</a></li>
+                <li class="navigation__list--element"><a class="link" href="assets/magazyn/git.pdf"
+                                target="_blank">git--pdf</a></li>
+                <li class="navigation__list--element"><a class="link" href="assets/magazyn/git-branche.pdf"
+                                target="_blank">git_branche--pdf</a></li>
         </ul>
-    
+        <main class="main">
+                <section class="content">
+                        <h2 class="second__header">git branche</h2>
+                        <p class="paragrath">
+                                >git branch <span class="comentary">//pokazuje na której gałęzi gita jesteśmy</span> <br>
+                                >git branch "nazwa"<span class="comentary">//tworzy nową gałąź gita </span><br>
+                                >git checkout nazwa<span class="comentary">//przechodzimy na gałąź "nazwa" </span><br>
+                                >gitk<span class="comentary"> //otwieramy narzędzie do obserwowania commitów </span><br>
+                                >git push --set-upstream origin "nazwa"<span class="comentary">//tworzymy nową gałąź na githubie</span> <br>
+                                >git checkout master<span class="comentary">// wracamy na główną gałąź </span><br>
+                                >git merge nazwa<span class="comentary">// zmiany z gałęzi "nazwa"zapisujemy do głównej gałęzi "master"
+                                !polecenie wykonujemy z gałęzi "master"</span><br>
+                        </p>
+                </section>
+                <section class="content">
+                        <h2 class="second__header">GULP-STARTER-KIT</h2>
+                        <p class="paragrath">
+                                >git clone https://github.com/maciejkorsan/wtf-gulp-starter <span class="comentary">// polecenie sciągnie
+                                pliki z adresu i utworzy katalog: wtf-gulp-starter<br>
+                                1.tworzymy nowy folder np:homepage-gulp <br>
+                                2.kopiujemy pliki z folderu wtf-gulp-starter, a następnie wklejamy je homepage-gulp <br>
+                                3.tworzymy repozytoriun na githubie o nazwie homepage-gulp // ta sama nazwa co folder z projektem </span><br>
+                                >git init <br>
+                                >git add README.md <br>
+                                >git commit -m "first commit" <br>
+                                >git remote add origin https://github.com/doneilprakapawecz/homepage-gulp.git <br>
+                                >git push -u origin master <br>
+                                <span class="comentary">//powyższe polecenia możemy skopiować z githuba po utworzeniu repozytoriun i 
+                                wkleić je wszystkie bezpośrednio w konsole </span><br>
+                                >git add . <br>
+                                >git commit -m "initial commit" <br>
+                                >git push <br>
+                                <span class="comentary">// sprawdzam, czy mam plik git.ignore, jeśli nie to gotworze i wpisjuje:node_modules</span><br>
+                                C:\WINDOWS\system32> npm install gulp-cli  <span class="comentary">
+                                        // instalujemy gulpa globalnie jako administrator raz na cały system
+                                </span><br>
+                                >npm install <span class="comentary">raz na projekt w folderze z projektem</span> <br>
+                                >gulp <span class="comentary">za każdym razem kiedy zaczynamy prace</span><br>
+                                >ctrl+c <span class="comentary">kiedy kończymy prace</span><br>
+                                >npm run deploy <span class="comentary">kiedy chcemy uaktualnić stronę na gh-pages branch</span><br>
+                        </p>
+                </section>
+        </main>
+
 </body>
+
 </html>
