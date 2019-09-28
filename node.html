@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>node.js</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>node.js</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontello/css/fontello.css">
+        <link rel="icon" href="assets/img/ćwiczenia.png">
 </head>
+
 <body>
-        <ul class="navigation__list navigation__list--js">
-                <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
-        </ul>
-        <main class="main">
-                <section class="content">
-                     <h2 class="second__header">Node.js</h2>
-                    <p class="paragrath">
-                        node -v //sprawdzamy w konsoli wersje node.js
-                        mkdir node-test //tworze katalog<br>
-                        cd node-test //przechodze do katalogu node-test<br>
-                        code . //otwieram edytor<br>
-                        node plik.js //otwieram plik javascript w konsoli<br>
-                    </p>
-                </section>
-        </main>
-    
+        <div style="height: 30px;" id="top"></div>
+        <header class="header__name" id="name">
+                <h1 style="margin-top: 0;">Daniel Prokopowicz - droga</h1>
+        </header>
+        <header class="navigation" id="navigation">
+                <button class="navigation__switcher navigation__switcher--js"><i class="icon-menu"></i></button>
+                <ul class="navigation__list navigation__list--js">
+                        <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
+                        <li class="navigation__list--element"><a class="link" target="_blank"
+                                        href="assets/magazyn/node-js.pdf">node-js.pdf</a></li>
+                </ul>
+        </header>
+        <header class="navigation" id="navigation">
+                <main class="main">
+                        <section class="content">
+                                <h2 class="second__header">Node.js</h2>
+                                <p class="paragrath">
+                                        node -v //sprawdzamy w konsoli wersje node.js
+                                        mkdir node-test //tworze katalog<br>
+                                        cd node-test //przechodze do katalogu node-test<br>
+                                        code . //otwieram edytor<br>
+                                        node plik.js //otwieram plik javascript w konsoli<br>
+                                </p>
+                        </section>
+                </main>
+                <script src="js/main.js"></script>
 </body>
+
 </html>
