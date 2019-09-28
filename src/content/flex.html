@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>flex</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/img/ćwiczenia.png">
     <style>
-        .main{
-            display:flex;
+        .main {
+            display: flex;
             flex-flow: row wrap;
             max-height: 500px;
             justify-content: flex-start;
             align-items: stretch;
             flex-direction: row-reverse;
-        
+
         }
-        .element{
+
+        .element {
             background: blue;
-            flex-grow:;
+            flex-grow: ;
             margin: 5px;
-            height:50px; 
+            height: 50px;
             width: 300px;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
+    <div style="height: 30px;" id="top"></div>
+    <header class="header__name" id="name">
+        <h1 style="margin-top: 0;">Daniel Prokopowicz - droga</h1>
+    </header>
+    <header class="navigation" id="navigation">
+        <button class="navigation__switcher navigation__switcher--js"><i class="icon-menu"></i></button>
         <ul class="navigation__list navigation__list--js">
-                <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
-                <li class="navigation__list--element"><a class="link" href="magazyn/flexbox.pdf">flex--pdf</a></li>
+            <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
+            <li class="navigation__list--element"><a class="link" href="assets/magazyn/flexbox.pdf"
+                    target="_blank">flex--pdf</a></li>
         </ul>
+    </header>
     <main class="main">
         <div class="element">1</div>
         <div class="element">2</div>
@@ -39,5 +51,7 @@
         <div class="element">4</div>
         <div class="element">5</div>
     </main>
+    <script src="js/main.sj"></script>
 </body>
+
 </html>

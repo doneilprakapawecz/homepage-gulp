@@ -44,6 +44,7 @@ body{
   color: rgb(44, 7, 78);
 }
 .main{
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 50px;
@@ -145,6 +146,7 @@ body{
 }
 .paragrath{
   padding: 10px;
+  font-family: lato;
 }
 .second__header{
   text-align: center;

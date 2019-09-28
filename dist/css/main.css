@@ -357,6 +357,7 @@ body {
   color: #2c074e; }
 
 .main {
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -461,7 +462,8 @@ body {
     color: #13da13; }
 
 .paragrath {
-  padding: 10px; }
+  padding: 10px;
+  font-family: lato; }
 
 .second__header {
   text-align: center; }

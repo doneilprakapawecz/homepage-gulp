@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sass</title>
-    <link rel="stylesheet" href="normalize.html">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
 </head>
+
 <body>
+    <div style="height: 30px;" id="top"></div>
+    <header class="header__name" id="name">
+        <h1 style="margin-top: 0;">Daniel Prokopowicz - droga</h1>
+    </header>
+    <header class="navigation" id="navigation">
+        <button class="navigation__switcher navigation__switcher--js"><i class="icon-menu"></i></button>
         <ul class="navigation__list navigation__list--js">
-                <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
-                <li class="navigation__list--element"><a class="link" href="assets/magazyn/sass.pdf">sass</a></li>
-                <li class="navigation__list--element"><a class="link" href="https://www.sassmeister.com/">Sasmeister</a></li>
+            <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
+            <li class="navigation__list--element"><a class="link" target="_blank"
+                    href="assets/magazyn/sass.pdf">sass</a></li>
+            <li class="navigation__list--element"><a class="link" target="_blank"
+                    href="https://www.sassmeister.com/">Sasmeister</a>
+            </li>
         </ul>
-   
-    <section>
-        <h2>must know</h2>
-        <p>Zmienna w scss: $kolor:red;</p>
-        <p>@mixin nazwa // funkcja zawierająca ustawienia css .</p>
-        <p>za pomocą <span style="color:red;">@include nazwa </span>możemy wkładać je do różnych klas.</p>
-    </section>
+    </header>
+    <main class="main">
+
+        <section class="content">
+            <h2>must know</h2>
+            <p class="paragrath"> $kolor:red; <span class="comentary"> // Zmienna w scss</span><br>
+                @mixin nazwa <span class="comentary"> // funkcja zawierająca ustawienia css
+                    za pomocą</span> @include nazwa <span class="comentary">możemy wkładać je do różnych klas.</span>
+            </p>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

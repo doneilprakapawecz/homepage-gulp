@@ -19,4 +19,14 @@ if ('serviceWorker' in navigator) {
 
 console.log(`Hello world!`);
 
+//obsługa przycisku przy zmianie wielkości ekranu
 
+let navigationSwticher=document.querySelector('.navigation__switcher--js');
+let navigationList=document.querySelector('.navigation__list--js');
+
+navigationSwticher.addEventListener('click',change);
+
+function change()
+{
+    navigationList.classList.toggle('navigation__list--modifed');
+}
