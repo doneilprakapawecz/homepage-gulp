@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/img/ćwiczenia.png">
+    <link rel="manifest" href="manifest.json">
+    <title>multimedia</title>
+    <style>
+        main {
+            padding: 100px;
+        }
+
+        .video {}
+    </style>
+</head>
+
+<body>
+    <header class="header__name" id="name">
+        <h1 style="margin-top: 0;">Daniel Prokopowicz - droga</h1>
+    </header>
+    <header class="navigation" id="navigation">
+        <button class="navigation__switcher navigation__switcher--js"><i class="icon-menu"></i></button>
+        <ul class="navigation__list navigation__list--js">
+            <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
+            <li class="navigation__list--element"><a class="link" href="assets/magazyn/Multimedia.pdf"
+                    target="_blank">multimedia--pdf</a></li>
+        </ul>
+    </header>
+    <main>
+        <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_2MG.mp3" controls></audio><br>
+        <video class="video video--js"
+            src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"></video> <br>
+        <button class="play play--js">play</button>
+        <button class="pause pause--js">pouse</button>
+        <button class="stop stop--js">stop</button>
+       <div> <iframe width="560" height="315" src="https://www.youtube.com/embed/XJNlK8n_rTU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </main>
+    <script>
+        const video = document.querySelector(".video--js")
+        const playButton = document.querySelector('.play--js');
+        playButton.addEventListener('click', (e) => {
+            video.play();
+        })
+        const pauseButton = document.querySelector('.pause--js');
+        pauseButton.addEventListener('click', (e) => {
+            video.pause();
+        })
+        const stopButton = document.querySelector('.stop--js');
+        stopButton.addEventListener('click', (e) => {
+            video.pause();
+            video.currentTime = 0;
+        })
+    </script>
+</body>
+
+</html>

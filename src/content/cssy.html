@@ -94,6 +94,45 @@
                         left: 600px;
                         animation: zmiana 15s ease-in-out infinite reverse forwards;
                 }
+
+                /*--------------------------CSS ~ + > []------------------------------------*/
+                .container{
+                        display: flex;
+                        justify-content: space-around;
+                        flex-direction: row;;
+                         }
+                .item + li {
+                        background: blue;
+                        width: 5rem;
+                }
+                .item2 ~ li {
+                        background: rgb(211, 92, 92);
+                        width: 5rem;
+                }
+                .list > li{
+                        background: green;
+                        width: 5rem;
+                }
+                [href]{
+                        /*color: red;*/
+                }
+                [href="https"]{/*dokładna wartość "https"*/
+                        color: rgb(138, 60, 138);
+                }
+                [href *="https"]{/*zawiera "https"*/
+                        color: orange;
+                }
+                [href ^="https"]{/*zaczyna się na  "https"*/
+                        color: brown;
+                }
+                [href$="https"]{/*kończy się na  "https"*/
+                        color:purple;
+                }
+                [my_atribut]{
+                        color: yellow;
+                }
+
+                /*---------------------------------------------------------------------------*/
         </style>
 
 </head>
@@ -112,20 +151,55 @@
                                 <li class="navigation__list--element"><a class="link"
                                                 href="assets/magazyn/anim-&-tran.pdf" target="_blank">anim-&-tran</a>
                                 </li>
+                                <li class="navigation__list--element"><a class="link"
+                                                href="assets/magazyn/REM-EM-TYPOGRAFIA.pdf" target="_blank">rem-em</a>
+                                </li>
+                                <li class="navigation__list--element"><a class="link" href="assets/magazyn/CSS-_-_-.pdf"
+                                                target="_blank">CSS ~ + > []</a>
+                                </li>
                         </ul>
                 </header>
                 <main class="main__cssy">
-                        <div class="animation animation--1">
-                                <h1 class=header>widzę cię</h1>
+                        <div>
+                                <div class="animation animation--1">
+                                        <h1 class=header>widzę cię</h1>
+                                </div>
+                                <div class="animation animation--2">
+                                        <h1 class=header>lecę bo chcę</h1>
+                                </div>
+                                <div class="animation animation--3 ">
+                                        <h1 class=header>lecę bo muszę</h1>
+                                </div>
+                                <div class="animation animation--4 ">
+                                        <h1 class=header></h1>
+                                </div>
                         </div>
-                        <div class="animation animation--2">
-                                <h1 class=header>lecę bo chcę</h1>
-                        </div>
-                        <div class="animation animation--3 ">
-                                <h1 class=header>lecę bo muszę</h1>
-                        </div>
-                        <div class="animation animation--4 ">
-                                <h1 class=header></h1>
+                        <!------------------ CSS + ~ > [] ---------------------->
+                        <div class="container">
+                                <ul>
+                                        <li class="item"><a href="#">1</a></li>
+                                        <li><a href="lkjhttps">2</a></li>
+                                        <li><a href="https">3</a></li>
+                                        <li class="item"><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                </ul>
+                                <ul>
+                                        <li><a href="https?sdf">1</a></li>
+                                        <li><a href="dsfhttps">2</a></li>
+                                        <li class="item2"><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#"my_atribut>5</a></li>
+                                        <li><a href="#">6</a></li>
+                                </ul>
+                                <ul class="list">
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#"my_atribut>4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                </ul>
                         </div>
 
                 </main>
