@@ -21,19 +21,52 @@
     <header class="navigation" id="navigation">
         <ul class="navigation__list navigation__list--js">
             <li class="navigation__list--element"><a class="link" href="index.html">strona główna</a></li>
-            <li class="navigation__list--element"><a class="link" href="assets/magazyn/tablice.pdf"
-                    target="_blank">tablice</a></li>
-            <li class="navigation__list--element"><a class="link" href="assets/magazyn/pętle.pdf"
-                    target="_blank">pętle</a></li>
-            <li class="navigation__list--element"><a class="link" href="assets/magazyn/przechowywanie-danych.pdf"
-                    target="_blank">p.. danych</a></li>
+            <li class="navigation__list--element"><a class="link" href="#" target="_blank">tablice</a>
+                <ul class="navigation__list--deeper">
+
+                    <li class="navigation__list--deeper--element"><a class="link" href="assets/magazyn/tablice.pdf"
+                            target="_blank">tablice</a></li>
+                    <li class="navigation__list--deeper--element"><a class="link" href="assets/magazyn/pętle.pdf"
+                            target="_blank">pętle</a></li>
+                    <li class="navigation__list--deeper--element"><a class="link"
+                            href="assets/magazyn/przechowywanie-danych.pdf" target="_blank">p.. danych</a></li>
+                    <li class="navigation__list--deeper--element"><a class="link" href="assets/magazyn/API-JSON.pdf"
+                            target="_blank">API-JSON</a></li>
+                    <li class="navigation__list--deeper--element"><a class="link" href="assets/magazyn/ciekawostki.pdf"
+                            target="_blank">ciekawostki</a></li>
+                </ul>
+            </li>
         </ul>
     </header>
     <main class="main">
+            <section class="content">
+                    <h2 class="second__header">github-api</h2>
+                    <p class="paragrath">
+                            <ul class="list--js"></ul>
+                    </p>
+                </section>
         <input type="text" class="focus focus--js">
+        <ul class="list--js"></ul>
     </main>
-    <script src="js/podstawy.js"></script>
-    <script src="js/main.js"></script>
+     <script src="js/main.js"></script>
+   <!-- <script>
+        const osoba = {
+            imie: "daniel",
+            nazwisko: 'p-cz',
+            wiek: 39
+        }
+        const Contakt = {
+            email: 'test@gmail.com',
+            phone: '13445554'
+        }
+        console.log(Contakt);
+        const personContakt = {
+            ...osoba,
+            ...Contakt
+        }
+        console.log('test');
+        console.log(personContakt);
+    </script>-->
 </body>
 
 </html>
